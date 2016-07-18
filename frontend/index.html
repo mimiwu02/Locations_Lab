@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0-beta1/jquery.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+
+    <div class="buttons">
+      <button id="check-in" type="button" name="button">check-in</button>
+      <button type="button" name="button">search</button>
+    </div>
+
+<!-- Displayed on page load. Contains information that was previously saved-->
+    <div class="history">
+      <div class="entry">
+        <div class="map"></div>
+        <div class="notes"></div>
+      </div>
+    </div>
+<br>
+
+<!-- After clicking save, a notes option appears allowing a user to add notes about the visited location -->
+<div class="form-page">
+  <div class="map-current"></div>
+  <textarea id= "new-note" type="text"></textarea>
+  <button id= "submit-btn" type="button">submit</button>
+</div>
+
+
+    <script async type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key="></script>
+    <script type="text/javascript" src="main.js">
+    </script>
+  </body>
+</html>
